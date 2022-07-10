@@ -1,0 +1,11 @@
+version:  '3'
+services:
+  datascience-notebook:
+      image:    jupyter/datascience-notebook
+      volumes:
+        - c:/TFM/work:/home/jovyan/work
+        - c:/TFM/datasets:/home/jovyan/work/datasets
+        - c:/TFM/models:/home/jovyan/work/models
+      ports:
+        - 8888:8888
+      container_name:   jupyter_notebook
